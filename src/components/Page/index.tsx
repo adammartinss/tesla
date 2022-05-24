@@ -2,7 +2,8 @@ import { ReactNode } from 'react';
 import DefaultOverlayContent from '../DefaultOverlayContent';
 import { ModelsWrapper, ModelSection } from '../Model';
 import { Container } from './styles';
-
+import {UniqueOverlay} from '../UniqueOverlay'
+import { Spacer }  from './styles'
 const Page: React.FC = () =>{
     return (
         <Container>
@@ -30,6 +31,10 @@ const Page: React.FC = () =>{
                         />
                     ))}
                 </div>
+
+                <Spacer/>
+
+                <UniqueOverlay/>
             </ModelsWrapper>
         </Container>
     );

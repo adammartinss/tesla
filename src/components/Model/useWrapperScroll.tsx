@@ -23,7 +23,7 @@ export default function useWrapperScroll (){
                 }
               element.addEventListener('scroll', updateScrollValue)
 
-                return()=> wrapperRef.current?.removeEventListener('scroll', updateScrollValue)
+                return()=> element.removeEventListener('scroll', updateScrollValue)
                 
             }
     },[scrollY, scrollYProgress, wrapperRef])
